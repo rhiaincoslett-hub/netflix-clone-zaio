@@ -83,6 +83,19 @@ h1 {
     color: white;
 }
 
+.banner-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 45px);
+    width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Nav Section */
 .navbar {
     display: flex;
     align-items: center;
@@ -105,18 +118,6 @@ h1 {
     border-radius: 3px;
     position: fixed;
     right: 45px;
-}
-
-.banner-container {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: calc(100% - 45px);
-    width: 750px;
-    margin: 0 auto;
-    text-align: center;
 }
 
 /* Get Started Form and Button */
@@ -201,28 +202,27 @@ h1 {
 }
 
 /* Reasons to Join Section */
-.features {
+.join {
     padding: 50px 20px;
     background-color: #000;
     color: #fff;
-    text-align: center;
 }
 
-.features h2 {
+.join h2 {
     font-size: 24px;
     margin-bottom: 40px;
     text-align: left;
     padding-left: 40px;
 }
 
-.features-container {
+.join-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
 
-.feature-card {
+.join-card {
     position: relative;
     background: linear-gradient(149deg, #192247 0%, #210e17 100%);
     border-radius: 10px;
@@ -236,25 +236,25 @@ h1 {
     box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
-.feature-card:hover {
+.join-card:hover {
     transform: scale(1.05);
     background-color: #222;
 }
 
-.feature-text h3 {
+.join-text h3 {
     font-size: 20px;
     margin-bottom: 10px;
     text-align: left;
 }
 
-.feature-text p {
+.join-text p {
     font-size: 0.95rem;
     color: #bbb;
     text-align: left;
     line-height: 1.4;
 }
 
-.feature-icon {
+.join-icon {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -262,7 +262,7 @@ h1 {
     height: 50px;
 }
 
-.feature-icon svg {
+.join-icon svg {
     width: 100%;
     height: 100%;
 }
