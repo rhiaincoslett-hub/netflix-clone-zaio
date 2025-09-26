@@ -1,0 +1,455 @@
+@media screen and (max-width: 768px) and (min-width: 480px) {
+    
+    .card-subtitle {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: 1rem 0;
+    }
+
+    .info-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        text-align: center;
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}    
+
+/* Hero Section */
+
+.email-form-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 16px;
+    margin: 0;
+    line-height: 1.25;
+    margin-top: 14px;
+    color: white;
+}
+
+.banner-wrap {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/73334647-ad51-42a9-b07b-93298cc2a8e1/2b0fca4f-c15c-4622-9efc-572c4a408c30/IN-en-20230605-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    border-bottom: 8px solid #222;
+    position: relative;
+    z-index: 1;
+}
+
+.overlay {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background: black;
+    position: absolute;
+    top: 0;
+    opacity: 60%;
+}
+
+.card-title {
+    font-size: 3.125rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.card-subtitle {
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+h1 {
+    font-size: 3.2rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    margin: 0 45px;
+    padding-top: 45px;;
+}
+
+.navbar > svg {
+    height: 32px;
+    position: fixed;
+}
+
+.navbar > a {
+    padding: 7px 17px;
+    color: white;
+    background: red;
+    text-decoration: none;
+    border-radius: 3px;
+    position: fixed;
+    right: 45px;
+}
+
+.banner-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 45px);
+    width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Get Started Form and Button */
+.get-started-form
+{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.get-started-form input {
+    height: 55px;
+    width: 230px;
+    padding-left: 10px;
+    display: flex;
+    background: rgba(22, 22, 22, 0.7);
+    border-radius: 3px;
+    border-width: 0.0625rem;
+    border-color: rgba(128, 128, 128, 0.7);
+}
+
+.get-started-form button {
+    background: red;
+    color: white;
+    height: 55px;
+    border: none;
+    padding: 0 26px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.get-started-form button:hover {
+    background: #e50914;
+}
+
+.get-started-form button::after {
+    content: '>';
+    padding: 5px;
+}
+.get-started-form input::placeholder {
+    color: #999999; 
+    font-size: 16px;
+}
+
+.get-started-form input:focus {
+    outline: none;
+    border-color: white;
+}   
+
+/* Enjoy on your TV and Video Section */
+
+.info-container {
+    background: black;
+    color: white;
+    display: flex;
+    padding: 70px 45px;
+    border-bottom: #222 8px solid;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tv-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tv-container img {
+    z-index: 1;
+}
+
+.tv-container video {
+    position: absolute;
+}
+
+/* Reasons to Join Section */
+.features {
+    padding: 50px 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.feature-card {
+    position: relative;
+    background: linear-gradient(149deg, #192247 0%, #210e17 100%);
+    border-radius: 10px;
+    padding: 30px 20px 60px 20px;
+    width: 250px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+    background-color: #222;
+}
+
+.feature-text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.feature-text p {
+    font-size: 0.95rem;
+    color: #bbb;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.feature-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.feature-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+#television-core-small {
+    width: 72px;
+    height: 72px;   
+}
+
+/* FAQ Section */
+.faq-section-container { 
+    max-width:100vw; 
+    background-color: #000000;
+    margin:0 auto; 
+    padding:60px 40px; 
+    border-bottom:8px solid #222;
+}
+.faq-title { 
+    color:#fff; 
+    font-size:24px; 
+    text-align:center; 
+    margin-bottom:28px; 
+    text-align: left;
+    padding-left: 40px;
+}
+
+.faq-grid { 
+    display:flex; 
+    flex-direction:column; 
+    gap:10px;
+    width: 100%;
+    height: auto;
+    max-width: 900px; 
+    margin: auto; 
+}
+
+details { 
+    box-shadow:0 2px 5px rgba(0,0,0,.15);
+}
+
+details { 
+    background:#2D2D2D;
+    width: 100%;
+    padding: 24px; 
+    color:#e6e6e6; 
+    transition:background .3s ease;
+}
+
+details[open] { 
+    background:#111; 
+}
+
+summary { 
+    list-style: none; 
+    cursor: pointer; 
+    font-weight: 500; 
+    font-size: 20px; 
+    position: relative; 
+    padding-right: 28px; 
+}
+
+summary::marker { 
+    content: ''; 
+}
+
+summary::after { 
+    content:'+'; 
+    position:absolute; 
+    right:6px; 
+    top:50%; 
+    transform:translateY(-50%); 
+    font-weight:700; 
+}
+
+details[open] summary::after { 
+    content:'−'; 
+}
+
+.faq-body { 
+    margin-top:12px; 
+    color:#bdbdbd; 
+    font-size:20px; 
+    line-height:1.45; 
+    font-weight:400;
+}
+
+.faq-cta { 
+    text-align:center; 
+    margin-top:22px; 
+    color:#e6e6e6; 
+}
+
+.faq-cta .faq-cta-link { 
+    color:#fff; 
+    text-decoration:underline; 
+    cursor:pointer;
+}
+
+/* Footer Section */
+.footer {
+    background: black;
+}
+
+.footer-items {
+    margin: 0 47.5px;
+    padding: 70px 45px;
+}
+
+.footer-top {
+    margin-bottom: 30px;
+}
+
+.footer ul li, .questions-title {
+    color: #757575;
+}
+
+.footer-links li {
+    font-size: 13px;
+    line-height: 2;
+}
+
+.footer ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.questions-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-links {
+    list-style-type: none;
+    columns: 4;
+    padding: 0;
+}
+
+/* Language Selector */
+.language {
+    height: 53px;
+    width: 145px;
+    color: #999999;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    padding: 0 10px;
+    margin-top: 30px;
+}
+
+.language select {
+    margin-left: 10px;
+    border: none;
+    appearance: none;
+    background: black;
+    color: #999999;
+    font-size: 16px;
+    outline: none;  
+}
+
+.language select::after {
+    content: '▼';
+    font-size: 12px;
+    color: #999999;
+    padding-left: 5px;
+    pointer-events: none;
+} 
+
+/* MOBILE STYLES */
+@media (max-width: 600px) {
+  body { font-size: 15px; }
+  h1, .card-title { font-size: 2rem; }
+  .navbar { flex-direction: column; padding-top: 25px; height: auto; margin: 0 10px; }
+  .banner-container, .info-container { width: 95vw !important; padding: 10px; }
+  .feature-card { width: 100%; min-width: unset; height: auto; }
+  .footer-items { flex-direction: column; padding: 40px 15px; }
+}
+
+/* TABLET STYLES */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body { font-size: 16px; }
+  .feature-card { width: 45vw; min-width: 260px; }
+}
+
+/* DESKTOP/LARGE SCREEN STYLES */
+@media (min-width: 1025px) {
+  body { font-size: 18px; }
+  .feature-card { width: 270px; }
+}
